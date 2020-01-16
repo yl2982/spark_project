@@ -96,7 +96,7 @@ The following three models will be chosen to train the data
 
 Since it is a binary classification problem, the model metrics will be `Accuracy`, `Precision`, `Recall` or `F1 score`. So what are the definitions of these metrics and how to decide?
 
-The first thing need to be mentioned is the [confusion matrix](https://en.wikipedia.org/wiki/Confusion_matrix) and the corresponding `True Positive(TP)`, `True Negative(TN)`, `False Positive(FP)`, `False Negative(FN)` which can be used to calculate `Accuracy`, `Precision`, `Recall` and `F1 score`.![confusion-matrix](https://github.com/yl2983/spark_project/raw/master/img/confusion-matrix.jpeg)
+The first thing need to be mentioned is the [confusion matrix](https://en.wikipedia.org/wiki/Confusion_matrix) and the corresponding `True Positive(TP)`, `True Negative(TN)`, `False Positive(FP)`, `False Negative(FN)` which can be used to calculate `Accuracy`, `Precision`, `Recall` and `F1 score`.![confusion-matrix](https://github.com/yl2982/spark_project/blob/master/img/confusion-matrix.jpeg)
 
 - **True Positive(TP) -** When the actual class is yes and the value of predicted class is also yes.
 
@@ -134,11 +134,11 @@ In this project, `F1 score` will be chose as one of the model metric and will be
 **AUC** is a standard binary classification metric that works well for imbalanced datasets and will used when doing the cross-validation steps. It stands for **AreaUnderROC**. Therefore, we need first to know what is **ROC (Receiver Operating Characteristics)** and the corresponding **ROC-AUC Curve**.
 
 The data is split to calculate **True Positive Rate** and **False Negative Rate**. See the image from `Udacity` video courses.
-![ROC1](https://github.com/yl2983/spark_project/raw/master/img/ROC1.png)
+![ROC1](https://github.com/yl2982/spark_project/blob/master/img/ROC1.png)
 Then the **ROC** curve is plotted based on these points and the areas under ROC curve (**AUC**) can be calculated.
-![ROC2](https://github.com/yl2983/spark_project/raw/master/img/ROC2.png)
+![ROC2](https://github.com/yl2982/spark_project/blob/master/img/ROC2.png)
 Different split ways may result in different AUC values.
-![ROC3](https://github.com/yl2983/spark_project/raw/master/img/ROC3.png)
+![ROC3](https://github.com/yl2982/spark_project/blob/master/img/ROC3.png)
 By using **AUC** one does not need to worry about where to set the probability threshold that translates the model output probabilities into positive and negative class predictions, since **AUC** summarizes model's performance over all possible thresholds.
 
 ### Build Pipelines
@@ -192,7 +192,7 @@ The **AUC** is relatively high for all three model but the **F1 scores** show a 
 It is important to note that this data has only 448 unique users, which may result in the relatively low F1 score of these three models. If using the large dataset in Amazon EMR cluster, the score may be higher and can prevent the overlization problem and test the generalization ability.
 
 ### Feature Importance
-![feature_importance](img/feature_importance.png)
+![feature_importance](https://github.com/yl2982/spark_project/blob/master/img/feature_importance.png)
 From the above feature importance figure, it can be concluded that `gender` and `level` are not so important. 
 
 By comparison, the following is the top 5 important features:
