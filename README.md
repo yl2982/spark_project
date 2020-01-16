@@ -96,7 +96,7 @@ The following three models will be chosen to train the data
 
 Since it is a binary classification problem, the model metrics will be `Accuracy`, `Precision`, `Recall` or `F1 score`. So what are the definitions of these metrics and how to decide?
 
-The first thing need to be mentioned is the [confusion matrix](https://en.wikipedia.org/wiki/Confusion_matrix) and the corresponding `True Positive(TP)`, `True Negative(TN)`, `False Positive(FP)`, `False Negative(FN)` which can be used to calculate `Accuracy`, `Precision`, `Recall` and `F1 score`.![avatar](img/confusion-matrix.jpeg)
+The first thing need to be mentioned is the [confusion matrix](https://en.wikipedia.org/wiki/Confusion_matrix) and the corresponding `True Positive(TP)`, `True Negative(TN)`, `False Positive(FP)`, `False Negative(FN)` which can be used to calculate `Accuracy`, `Precision`, `Recall` and `F1 score`.![avatar](/img/confusion-matrix.jpeg)
 
 - **True Positive(TP) -** When the actual class is yes and the value of predicted class is also yes.
 
